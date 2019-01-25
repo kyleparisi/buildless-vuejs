@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <ul>
+        <li><a href="/subpages">Page with subpages</a></li>
+    </ul>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+    <script src="/js/require.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/index.js"></script>
+    <script>
+        window.data = {
+          message: "Hello Vue!"
+        }
+    </script>
+</body>
+</html>

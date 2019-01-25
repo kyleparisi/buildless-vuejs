@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+</head>
+<body>
+<div class="w-100 bb b--light-gray" id="nav">
+    <navigation></navigation>
+</div>
+
+<div id="pages">
+    <div class="pa4">
+        <router-view></router-view>
+    </div>
+</div>
+
+<ul>
+    <li><a href="/">Home</a></li>
+</ul>
+
+<footer>
+    <app-footer></app-footer>
+</footer>
+
+<script src="/js/require.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/subpages.js"></script>
+<script>
+  window.data = {
+    loading: false,
+    systemError: false,
+    stuff: ""
+  }
+</script>
+</body>
+</html>
