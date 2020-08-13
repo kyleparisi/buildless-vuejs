@@ -20,8 +20,7 @@ requirejs.config({
   paths: {
     lodash: "lodash.min",
     Vue: "https://cdn.jsdelivr.net/npm/vue/dist/vue",
-    vue:
-      "https://cdn.rawgit.com/edgardleal/require-vuejs/aeaff6db/dist/require-vuejs.min",
+    vue: "https://unpkg.com/require-vuejs@1.1.3/dist/require-vuejs",
     "vue-router": "https://unpkg.com/vue-router/dist/vue-router"
   },
   shim: {
